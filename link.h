@@ -9,7 +9,7 @@
 #ifdef NOT_USING_CC_WHATEVER_ITS_PREDEF_IS
 #include <bool.h>
 #endif
-#include <iostream.h>
+#include <iostream>
 
 
 class LinkedList

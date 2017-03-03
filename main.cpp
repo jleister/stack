@@ -6,8 +6,10 @@
  *  June 16, 1998
  */
 
-#include <iostream.h>
+#include <iostream>
 #include "stack.h"
+
+using namespace std;
 
 int main()
 {

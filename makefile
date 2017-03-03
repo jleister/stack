@@ -21,15 +21,15 @@
 #
 #
 
-SRCS=	teststack.cpp	\
+SRCS=	main.cpp	\
 	stack.cpp	\
 	link.cpp
 
-OBJS=	teststack.o		\
+OBJS=	main.o		\
 	stack.o		\
 	link.o
 
-teststack.o:	stack.h
+main.o:         stack.h
 
 stack.o:	stack.h		\
 	link.h
@@ -37,18 +37,17 @@ stack.o:	stack.h		\
 link.o:	link.h
 
 
-PROGRAMS = testStack
+PROGRAMS = main
 
 all::  $(PROGRAMS)
 
 #LOCAL_LIBRARIES = $(XLIB)
 
-testStack: $(OBJS)
+main: $(OBJS)
 	$(CXX) -o $@ $(OBJS)
 #$(CXX) -o $@ $(OBJS) $(LDOPTIONS) $(LOCAL_LIBRARIES) $(LDLIBS)  $(EXTRA_LOAD_FLAGS)
 
-clean::
-	$(RM) testStack 
+clean::$(RM)main
 
 latex::
 	latex stack.tex    

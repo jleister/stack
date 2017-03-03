@@ -6,7 +6,7 @@
 #ifdef NOT_USING_CC_WHATEVER_ITS_PREDEF_IS
 #include <bool.h>
 #endif
-#include <iostream.h>
+#include <iostream>
 
 #include "link.h"
 
@@ -74,7 +74,7 @@ void LinkedList::PrintNodes()
 
     while( p != NULL )
     {
-        cout << p->info << endl;
+        std::cout << p->info << std::endl;
         p = p->next;
     }
 
