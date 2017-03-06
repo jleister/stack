@@ -1,4 +1,4 @@
-/*  testStack.cpp
+/*  main.cpp
  *
  *  Stack test program
  *
